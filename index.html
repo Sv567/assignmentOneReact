@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function UI() {
+
+            var title = "Topics Covered"
+            var style = {
+                backgroundColor : 'White',
+                color: 'black',
+                padding:"20px 250px" ,
+                fontFamily:'sans-serif',
+                display:'flex',
+                flexDirection:'column',
+                justifyContent: 'center',
+            
+            }
+            var headingStyle = {
+                color: 'blue' ,
+                borderBottom: "2px solid blue",
+                width: '230px'
+            }
+            return (
+                <div style = {style}>
+
+                    <h2>{title}</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, expedita?</p>
+
+                    <h4 style={headingStyle}>Getting Started with the web</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam obcaecati perspiciatis quos? Reiciendis!</p>
+
+                    <h4 style={headingStyle}>HTML--Structuring the web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iste quaerat soluta doloremque, quas nulla temporibus ducimus amet molestiae consequatur.</p>
+
+                    <h4 style={headingStyle}>CSS--styling the web</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui ex numquam! Cumque numquam velit eveniet dicta nisi sunt, ad corrupti soluta sint eligendi ipsam?</p>
+                </div>
+            )
+        }
+
+        ReactDOM.render(UI() , document.getElementById("root"))
+    </script>
+</body>
+
+</html>
